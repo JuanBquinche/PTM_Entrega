@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "53b5f9a7-9eb5-4541-9106-a2d3c82bd901",
+		"name": "PTMicroservicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10758377"
+	},
+	"item": [
+		{
+			"name": "GetPersonas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5250/api/Personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5250",
+					"path": [
+						"api",
+						"Personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtengaPersonaporId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5250/api/Personas/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5250",
+					"path": [
+						"api",
+						"Personas",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarPersona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Catalina Gonzalez\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 22,\r\n    \"identificacion\": 102054563,\r\n    \"direccion\": \"Carrera 7s #11-03\",\r\n    \"telefono\": \"601 3669123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5250/api/Personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5250",
+					"path": [
+						"api",
+						"Personas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
