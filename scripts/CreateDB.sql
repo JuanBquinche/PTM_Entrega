@@ -1,2 +1,2 @@
-create database PruebaTM
+create database PruebaMS
 go
